@@ -65,7 +65,6 @@ address {
 
 .cv h2 {
     margin-bottom: 5px;
-    border-bottom: 3px dotted black;
 } 
 
 .cv h3 {
@@ -79,4 +78,29 @@ address {
 
 .cv ul {
     margin-top: 5px;
+}
+
+.cv .collapsible {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-family: 'Times New Roman';
+    background: white;
+    display: flex;
+    padding-left: 0px;
+    font-size: 24px;
+}
+
+.cv .collapsible:hover {
+    color: #555;
+}
+
+.cv .collapsible:focus {
+    border: none;
+}
+
+.cv .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.2s ease-out;
 }
